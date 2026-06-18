@@ -1,0 +1,15 @@
+---
+description: AI-DLC construction phase — code generation, testing, build config
+alwaysApply: false
+globs: ["src/**", "lib/**", "tests/**", "*.ts", "*.tsx", "*.js", "*.py", "*.java", "*.go", "*.rs", "*.cs"]
+---
+
+## AI-DLC Construction Phase
+
+When writing or reviewing source code:
+
+- Follow the design artifacts in aidlc-docs/construction/
+- Place implementation in src/ and tests/ with matching directory structure
+- Run linting and tests before marking a task complete
+- Update aidlc-docs/ with any deviations from the original design
+- Produce traceable artifacts: every implementation decision links to a requirement

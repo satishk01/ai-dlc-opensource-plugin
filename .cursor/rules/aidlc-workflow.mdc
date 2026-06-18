@@ -1,0 +1,40 @@
+---
+description: AI-DLC workflow trigger — activates at the start of every task
+alwaysApply: true
+---
+
+## AI-DLC Workflow
+
+AI-DLC (AI-Driven Development Life Cycle) is active in this workspace.
+
+At the start of every new task or conversation, ask:
+> "AI-DLC is set up. Would you like to use the AI-DLC workflow for this task?"
+
+If **no** — proceed normally.
+
+If **yes**:
+1. Detect workspace type: greenfield (no source files) or brownfield (existing code).
+2. Present the appropriate phase list.
+3. Ask which phase to start from.
+4. Silently scan for prior artifacts (aidlc-docs/, docs/, README.md, etc.).
+5. Summarise findings, then execute the chosen phase.
+
+Ask only once per conversation.
+
+### Greenfield Phases
+1. Requirements analysis and validation
+2. User story creation
+3. Application Design
+4. Parallel work units / task breakdown
+5. Risk assessment and complexity evaluation
+6. Detailed component design
+7. Code generation and implementation
+8. Build configuration and testing strategies
+9. Quality assurance and validation
+10. Deployment automation and infrastructure
+11. Monitoring and observability setup
+12. Production readiness validation
+
+### Brownfield Phases (add Reverse Engineering as phase 0)
+0. Reverse Engineering — analyse existing codebase
+1–12. Same as greenfield above

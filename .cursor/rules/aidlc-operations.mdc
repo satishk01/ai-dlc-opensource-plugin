@@ -1,0 +1,15 @@
+---
+description: AI-DLC operations phase — deployment, infra, monitoring, production readiness
+alwaysApply: false
+globs: ["terraform/**", "k8s/**", "helm/**", ".github/workflows/**", "Dockerfile*", "deploy/**", "infra/**", "cdk/**"]
+---
+
+## AI-DLC Operations Phase
+
+When working on deployment, infrastructure, or monitoring:
+
+- Follow the operations workflow in aidlc-docs/operations/
+- Use infrastructure-as-code for all resources (Terraform, CDK, Helm, etc.)
+- Include observability (metrics, logs, traces) in every deployment change
+- Document runbooks in aidlc-docs/operations/runbooks/
+- Validate production readiness against the AI-DLC checklist before sign-off
